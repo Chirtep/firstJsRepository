@@ -14,37 +14,18 @@ if (numberOfFilms < 10) {
     alert('ТЫ ВСЕ СЛОМАЛ!');
 }
 
-// for (let i = 0; i < 2; i++) {
-
-//     const a = prompt('Один из последних просмотренных фильмов?', ''),
-//           b = prompt('На сколько оцените его?','');
-
-//     if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-//         console.log('done');
-//     } else {
-//         console.log('error');
-//         i--;
-//     }
-// }
-
-
-let a, b;
-
-function ask (n, string) {
-    n = prompt (string);
-    
-}
-
 for (let i = 0; i < 2; i++) {
 
-        ask (a, 'Какой фильм посмотрел недавно?');
-        ask (b, 'На сколько оценишь?');
+    const a = prompt('Один из последних просмотренных фильмов?', ''),
+          b = prompt('На сколько оцените его?','');
 
-        if (a == '' && b == '' && a.length > 50 && a == null && b == null) {
-            console.log('error');
-            i--;
-        }
+    if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+        console.log('done');
+    } else {
+        console.log('error');
+        i--;
     }
+}
 
 
 // let i =1;
