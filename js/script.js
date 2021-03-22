@@ -1,44 +1,54 @@
 "use strict";
 
-const numberOfFilms = +prompt('Сколько фильмов уже посмотрел?');
+// To string
 
-if (numberOfFilms < 10) {
-    alert('Маловато');
+// 1)
+console.log(typeof(String(null)));
+console.log(typeof(String(4)));
 
-} else if (numberOfFilms > 10 && numberOfFilms < 30) {
-    alert('Ты классический зритель');
+// 2)
+console.log(typeof(null + ''));
 
-} else if (numberOfFilms > 30) {
-    alert('Ты синефил');
-} else {
-    alert('ТЫ ВСЕ СЛОМАЛ!');
+const num = 5;
+
+console.log('https://vk.com/catalog/' + num);
+
+const fontSize = 26 + 'px';
+
+// To Number
+
+// 1)
+console.log(typeof(Number('4')));
+
+// 2)
+console.log(typeof(+ '5'));
+
+// 3)
+console.log(typeof(parseInt('15px', 10)));
+
+
+let answer = +prompt("Hello", "");
+
+// To boolean
+
+// 0, '', null, undefined, NaN;
+
+
+// 1)
+let switcher = null;
+
+if (switcher) {
+    console.log('Working...');
 }
 
-for (let i = 0; i < 2; i++) {
+switcher = 1;
 
-    const a = prompt('Один из последних просмотренных фильмов?', ''),
-          b = prompt('На сколько оцените его?','');
-
-    if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-        console.log('done');
-    } else {
-        console.log('error');
-        i--;
-    }
+if (switcher) {
+    console.log('Working...');
 }
 
+// 2)
+console.log(typeof(Boolean('4')));
 
-// let i =1;
-
-// while (i < 3) {
-//     ask (a, 'Какой фильм посмотрел недавно?');
-//     ask (b, 'На сколько оценишь?');
-//     i++;
-// }
-
-// do {
-//     ask (a, 'Какой фильм посмотрел недавно?');
-//     ask (b, 'На сколько оценишь?');
-//     i ++;
-// }
-// while (i < 3);
+// 3)
+console.log(typeof(!!'4444'));
