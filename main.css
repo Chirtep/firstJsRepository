@@ -1,0 +1,68 @@
+.circle {
+width: 200px;
+height: 200px;
+background: #7eef1e;
+-moz-border-radius: 100px;
+-webkit-border-radius: 100px;
+border-radius: 100px;
+}
+
+ .box {
+ width: 200px;
+ height: 200px;
+ background: #f548fe;
+ }
+
+ .black {
+  width: 100px;
+  height: 50px;
+  background: #000000;
+  color: white;
+  }
+
+ button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+ .heart {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 30px;
+  
+    position: relative;
+    left: 45%; top: 45%;
+  
+    background-color: red;
+  
+    transform: rotate(-45deg);
+  }
+  
+  .heart:before,
+  .heart:after {
+    content: "";
+  
+    position: absolute;
+    height: 50px;
+    width: 50px;
+  
+    background-color: red;
+    border-radius: 50%;
+  }
+  
+  .heart:before {
+    top: -25px;
+    left: 0;
+  }
+  
+  .heart:after {
+    left: 25px;
+    top: 0;
+  }
